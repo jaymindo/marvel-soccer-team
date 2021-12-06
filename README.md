@@ -31,6 +31,10 @@ This is the single page interactive website that was built with Reactjs. It allo
 
 <img src="src/image/result.png"/>
 
-2. Share to social media
+2. Select the marvel character
+
+<img src="src/image/select-character.png"/>
+
+3. Share to social media
 
 <img src="src/image/share-team.png"/>

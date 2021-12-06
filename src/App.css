@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: #000 url("image/backgroud.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #3fb573;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 15px;
+  border: 0;
+  margin: 10px 0;
+}
+
+header {
+  height: 150px;
+}
+
+header img {
+  width: 160px;
+}
+.title {
+  color: rgb(0, 110, 255);
+  text-shadow: 2px 0 0 rgb(226, 251, 0), -2px 0 0 #fff, 0 2px 0 #fff,
+    0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.search {
+  height: 100px;
+  margin-top: 1.5rem;
+}
+
+input[type="text"] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.content {
+  cursor: pointer;
+  background-color: transparent;
+  height: 215px;
+  width: 200px;
+  perspective: 1000px;
+  margin-left: 0.5rem;
+}
+
+.content h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.content img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+
+.content-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.content:hover .content-inner {
+  transform: rotateY(180deg);
+}
+
+.content-front,
+.content-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.content-back {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.content li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.content-icon {
+  cursor: pointer;
+  background-color: transparent;
+  height: 175px;
+  width: 170px;
+  perspective: 1000px;
+  margin-left: 0.5rem;
+}
+
+.content-icon-name {
+  font-size: 27px;
+  border-bottom: 1px rgb(209, 198, 38) solid;
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.content-icon-role {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.content-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.content-inner-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.content-front-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.team-display-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.football-pitch-background {
+  position: relative;
+  width: 1300px;
+}
+
+.football-pitch-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.football-player {
+  position: absolute;
+  top: 43%;
+  left: 6%;
+}
+.football-player:nth-child(2) {
+  left: 28%;
+}
+
+.football-player:nth-child(3) {
+  left: 71%;
+  top: 62%;
+}
+
+.football-player:nth-child(4) {
+  left: 43%;
+  top: 69%;
+}
+
+.football-player:nth-child(5) {
+  left: 43%;
+  top: 12%;
+}
+.football-player:nth-child(6) {
+  left: 75%;
+  top: 20%;
+}
+.bottom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  .contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .football-pitch-background {
+    position: relative;
+    width: 100%;
+  }
+  header {
+    margin-top: -50px;
+    height: 160px;
+  }
+
+  header img {
+    height: 30px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .football-player {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+  }
+  .football-player:nth-child(2) {
+    left: 22%;
+  }
+
+  .football-player:nth-child(3) {
+    left: 71%;
+    top: 65%;
+  }
+
+  .football-player:nth-child(4) {
+    left: 39%;
+    top: 65%;
+  }
+
+  .football-player:nth-child(5) {
+    left: 39%;
+    top: 5%;
+  }
+  .football-player:nth-child(6) {
+    left: 70%;
+    top: 17%;
+  }
+  .bottom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .content-icon {
+    cursor: pointer;
+    background-color: transparent;
+    height: 120px;
+    width: 110px;
+    perspective: 1000px;
+    margin-left: 0.5rem;
+  }
+  .content-icon-name {
+    font-size: 15px;
+    border-bottom: 1px rgb(209, 198, 38) solid;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .content-icon-role {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .contents {
+    grid-template-columns: 1fr;
+  }
+  .football-pitch-background {
+    position: relative;
+    width: 100%;
+  }
+  header {
+    margin-top: -50px;
+    height: 160px;
+  }
+
+  header img {
+    height: 30px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .football-player {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+  }
+  .football-player:nth-child(2) {
+    left: 22%;
+  }
+
+  .football-player:nth-child(3) {
+    left: 71%;
+    top: 65%;
+  }
+
+  .football-player:nth-child(4) {
+    left: 39%;
+    top: 65%;
+  }
+
+  .football-player:nth-child(5) {
+    left: 39%;
+    top: 5%;
+  }
+  .football-player:nth-child(6) {
+    left: 70%;
+    top: 17%;
+  }
+  .bottom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .content-icon {
+    cursor: pointer;
+    background-color: transparent;
+    height: 55px;
+    width: 50px;
+    perspective: 1000px;
+    margin-left: 0.5rem;
+  }
+  .content-icon-name {
+    font-size: 12px;
+    border-bottom: 1px rgb(209, 198, 38) solid;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .content-icon-role {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    text-align: center;
+  }
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+}

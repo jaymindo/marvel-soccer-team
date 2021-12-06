@@ -26,21 +26,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="image/home-page.png"/>
+<img src="src/image/home-page.png"/>
 
 This is the single page interactive website that was built with Reactjs. It allows the user can build their football team with the Marvel characters. Fetching the data from marvel api and also display the character info.
 
 
   ```
-
-### Installation
+<!-- Installation -->
    ```
 1. Install NPM packages
    ```sh
    npm install
    ```
 2. Start the app
-  ``sh
+  ```sh
    npm start
    ```
 
@@ -50,4 +49,4 @@ This is the single page interactive website that was built with Reactjs. It allo
 
 <!-- Some screenshot from the App ->
 
-<img src="image/result.png"/>
+<img src="src/image/result.png"/>

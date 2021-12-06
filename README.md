@@ -32,12 +32,11 @@ This is the single page interactive website that was built with Reactjs. It allo
 
 
 <!-- Installation -->
-
 1. Install NPM packages
    ```sh
    npm install
    ```
-2. Start the app
+   2. Start the app
   ```sh
    npm start
    ```
@@ -49,7 +48,9 @@ This is the single page interactive website that was built with Reactjs. It allo
 <!-- Some screenshot from the App -->
 
 1. Build team
+
 <img src="src/image/result.png"/>
 
 2.Share to social media
+
 <img src="src/image/share-team.png"/>
